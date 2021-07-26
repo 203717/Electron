@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:darkcyan !important;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./bulma.css">
+    <title>Tabla</title>
+</head>
+<body>
+                <form onsubmit="event.preventDefault();procesos();" autocomplete="off">
+                    <div class="card row-custom">
+                        <div class="card-content">
+                            <div class="content" style="height: 100px;">
+                                <div class="columns">
+                                    <div class="column">
+                
+                                        <button class="button is-primary" type="button" style="width: 100% !important;" onclick="addData();">Agregar</button>
+                
+                
+                                    </div>
+                                    <div class="column">
+                                        <input id="nombre" class="input tabla-add nombre" type="text" placeholder="nombre" required="llena este campo"> 
+                                        <br>
+                                        <br>
+                                        <input id="ap_pat" class="input-custom input is-primary" type="text" placeholder="ap_mat" required="llena este campo">
+                                      
+                                    </div>
+                                    <div class="column">
+                                        <input id="ap_mat" class="input-custom input is-primary" type="text"  placeholder="ap_pat" required="llena este campo">
+                                        <br>
+                                        <br>
+                                        <input id="edad" class="input-custom input is-primary" type="number" placeholder="edad" required="llena este campo">
+                
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+		<br/>
+		<div >
+            <table class="tabla" id="persona">
+                <thead>
+                  <tr>  
+                    <th>Nombre</th> 
+                    <th>ap_pat  </th>
+                    <th>ap_mat  </th>
+                    <th>edad</th>
+                  </tr>
+                </thead>
+                  <tbody>
+                      
+        
+                  </tbody>
+              </table>
+              <div id="datosTabla"></div>
+        </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+.formulario{
+    background-color:rgb(3, 150, 150);
+    position: relative;
+    width: 40%;
+    height: 450;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 7%;
+}
+
+.formulario input{
+    width: 300px;
+}
+.formulario img{
+    height: 150px;
+    width: 150px;
+}
+.formulario *{
+    text-align: center;
+    justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
