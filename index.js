@@ -1,12 +1,3 @@
-if (typeof localStorage === "undefined" || localStorage === null) {
-  var LocalStorage = require('node-localstorage').LocalStorage;
-  localStorage = new LocalStorage('./scratch');
-}
-//localStorage.setItem('andy', 'Visual');
-//console.log(localStorage.getItem('andy'));
-//const con = require('./connect');
-
-
 const { app, BrowserWindow } = require('electron');
 
 function createWindow(){
@@ -21,7 +12,6 @@ function createWindow(){
   win.loadFile('index.html');
 }
 
-app.whenReady().then(() =>{
+app.whenReady().then(() => {
   createWindow();
-})
-
+});  

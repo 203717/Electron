@@ -32,8 +32,9 @@ connection.connect(function (err) {
         //console.log(err.fatal);
         //console.log('error')
     } else {
-        document.getElementById('txtData').value ="Conectando...";
-        setTimeout( function(){location.href="./basetabla.html"},2000);
+        //location.href="./basetabla.html";
+        //document.getElementById('txtData').value ="Conectando...";
+        //setTimeout( function(){"},2000);
         //document.getElementById('txtData').value = `host: ${host} user: ${user} password: ${password} database: ${database} port: ${port}\nconexion exitosa`;
     }
 });

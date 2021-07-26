@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./bulma.css">
     <title>Tabla</title>
 </head>
-<body>
+<body onload="selectData()">
                 <form onsubmit="event.preventDefault();procesos();" autocomplete="off">
                     <div class="card row-custom">
                         <div class="card-content">
@@ -45,18 +45,18 @@
             <table class="tabla" id="persona">
                 <thead>
                   <tr>  
-                    <th>Nombre</th> 
-                    <th>ap_pat  </th>
-                    <th>ap_mat  </th>
-                    <th>edad</th>
+                    <th><abbr title="Nombre">Nombre</abbr></th>
+                    <th><abbr title="Apellido Paterno">Ap_pat</abbr></th>
+                    <th><abbr title="Apellido Materno">Ap_mat</abbr></th>
+                    <th><abbr title="Edad">Edad</abbr></th>
                   </tr>
                 </thead>
-                  <tbody>
+                  <tbody id="datitostablita">
                       
         
                   </tbody>
               </table>
-              <div id="datosTabla"></div>
+              <section id="datosTabla"></section>
         </div>
     <script src="main.js"></script>
 </body>
